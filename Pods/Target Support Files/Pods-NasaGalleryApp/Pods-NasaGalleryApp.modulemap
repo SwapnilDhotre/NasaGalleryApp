@@ -1,0 +1,6 @@
+framework module Pods_NasaGalleryApp {
+  umbrella header "Pods-NasaGalleryApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

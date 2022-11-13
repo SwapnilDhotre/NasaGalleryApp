@@ -27,6 +27,8 @@
 		E66FADF8291FC3E900CD4018 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADF7291FC3E900CD4018 /* String_Extension.swift */; };
 		E6E33FAE2920D98800FBEBC0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E33FAD2920D98800FBEBC0 /* NetworkService.swift */; };
 		E6E33FD92920DD9900FBEBC0 /* NasaGalleryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E33FD82920DD9900FBEBC0 /* NasaGalleryAppTests.swift */; };
+		E6E33FEA2921050F00FBEBC0 /* SwipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E33FE82921050F00FBEBC0 /* SwipeCollectionViewCell.swift */; };
+		E6E33FEB2921050F00FBEBC0 /* SwipeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E33FE92921050F00FBEBC0 /* SwipeCollectionViewCell.xib */; };
 		E6EC290D2920192E00453F09 /* GalleryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EC290B2920192E00453F09 /* GalleryDetailsViewController.swift */; };
 		E6EC290E2920192E00453F09 /* GalleryDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6EC290C2920192E00453F09 /* GalleryDetailsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		E6E33FAD2920D98800FBEBC0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E6E33FCF2920DD7900FBEBC0 /* NasaGalleryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaGalleryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E33FD82920DD9900FBEBC0 /* NasaGalleryAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NasaGalleryAppTests.swift; path = ../../../../../.Trash/NasaGalleryAppTests.swift; sourceTree = "<group>"; };
+		E6E33FE82921050F00FBEBC0 /* SwipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		E6E33FE92921050F00FBEBC0 /* SwipeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeCollectionViewCell.xib; sourceTree = "<group>"; };
 		E6EC290B2920192E00453F09 /* GalleryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetailsViewController.swift; sourceTree = "<group>"; };
 		E6EC290C2920192E00453F09 /* GalleryDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryDetailsViewController.xib; sourceTree = "<group>"; };
 		F114B6865EF10C3D34008BAD /* Pods-NasaGalleryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaGalleryApp.debug.xcconfig"; path = "Target Support Files/Pods-NasaGalleryApp/Pods-NasaGalleryApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -234,9 +238,19 @@
 			path = NasaGalleryAppTests;
 			sourceTree = "<group>";
 		};
+		E6E33FE7292104F500FBEBC0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E6E33FE82921050F00FBEBC0 /* SwipeCollectionViewCell.swift */,
+				E6E33FE92921050F00FBEBC0 /* SwipeCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		E6EC290A2920190F00453F09 /* GalleryDetails */ = {
 			isa = PBXGroup;
 			children = (
+				E6E33FE7292104F500FBEBC0 /* Cells */,
 				E6EC290B2920192E00453F09 /* GalleryDetailsViewController.swift */,
 				E6EC290C2920192E00453F09 /* GalleryDetailsViewController.xib */,
 			);
@@ -339,6 +353,7 @@
 				E66FADF6291FC21F00CD4018 /* GalleryCollectionViewCell.xib in Resources */,
 				E66FADC9291F6FD000CD4018 /* Assets.xcassets in Resources */,
 				E66FADEF291FAF0800CD4018 /* CVProgressHUD.xib in Resources */,
+				E6E33FEB2921050F00FBEBC0 /* SwipeCollectionViewCell.xib in Resources */,
 				E66FADDA291F7E8200CD4018 /* GalleryHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +424,7 @@
 				E66FADEA291FAEC000CD4018 /* UIViewController_Extension.swift in Sources */,
 				E6E33FAE2920D98800FBEBC0 /* NetworkService.swift in Sources */,
 				E66FADE2291F817D00CD4018 /* NetworkManager.swift in Sources */,
+				E6E33FEA2921050F00FBEBC0 /* SwipeCollectionViewCell.swift in Sources */,
 				E6EC290D2920192E00453F09 /* GalleryDetailsViewController.swift in Sources */,
 				E66FADD9291F7E8200CD4018 /* GalleryHomeViewController.swift in Sources */,
 				E66FADF1291FBFA000CD4018 /* GalleryItemViewModel.swift in Sources */,

@@ -106,7 +106,7 @@ extension GalleryHomeViewController: UICollectionViewDataSource, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let controller = GalleryDetailsViewController.create(viewModel: self.viewModel!.galleryData.value[indexPath.row])
+        let controller = GalleryDetailsViewController.create(selectedIndex: indexPath, galleryData: self.viewModel!.galleryData.value)
         self.navigationController?.pushViewController(controller, animated: true)
     }
     

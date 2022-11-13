@@ -31,12 +31,7 @@ extension UIViewController {
         self.clearNavigationBar()
         if (isBackVisible) {
             let button = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-            button.setImage(UIImage(named: "back_arrow"), for: .normal)
-            button.imageView?.contentMode = .scaleAspectFit
-            button.setTitle(" ", for: .normal)
-            button.backgroundColor = .white
-            button.layer.cornerRadius = 20
-            button.layer.masksToBounds = true
+            
             button.addTarget(self, action: selector, for: .touchUpInside)
             
             let backBarButton = UIBarButtonItem(customView: button)

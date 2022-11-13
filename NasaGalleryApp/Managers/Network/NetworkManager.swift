@@ -8,17 +8,14 @@
 import Foundation
 import Combine
 
-class NetworkManager {
-    static let shared = NetworkManager()
-    
-    private init() { }
+class NetworkManager: NetworkService {
     
     private var cancellables = Set<AnyCancellable>()
     private let url = "https://raw.githubusercontent.com/obvious/take-home-exercise-data/trunk/nasa-pictures.json"
     
     // Get gallery data from api
-    func getGalleryData<T: Decodable>(type: T.Type) -> Future<[T], Error> {
-        return Future<[T], Error> { [weak self] promise in
+    func getGalleryData() -> Future<[GalleryModel], Error> {
+        return Future<[GalleryModel], Error> { [weak self] promise in
             guard let self = self, let url = URL(string: self.url) else {
                 return promise(.failure(NetworkError.invalidURL))
             }
@@ -31,12 +28,11 @@ class NetworkManager {
                     
                     return data
                 }
-                .decode(type: [T].self, decoder: JSONDecoder())
+                .decode(type: [GalleryModel].self, decoder: JSONDecoder())
                 .receive(on: RunLoop.main)
                 .sink { completion in
                     if case let .failure(error) = completion {
                         switch error {
-                            
                         case let decodingError as DecodingError:
                             promise(.failure(decodingError))
                         case let apiError as NetworkError:

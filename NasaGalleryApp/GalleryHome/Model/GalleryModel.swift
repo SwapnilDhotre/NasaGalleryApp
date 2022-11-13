@@ -9,11 +9,11 @@ import Foundation
 
 struct GalleryModel: Codable {
     var title: String
-    var url: String
-    var hdurl: String
+    var url: String?
+    var hdurl: String?
     var mediaType: String
-    var serviceVersion: String
-    var explanation: String
+    var serviceVersion: String?
+    var explanation: String?
     var date: String
     var copyright: String?
     

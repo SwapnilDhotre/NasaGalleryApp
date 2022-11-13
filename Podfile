@@ -6,5 +6,6 @@ target 'NasaGalleryApp' do
   use_frameworks!
 
   # Pods for NasaGalleryApp
+  pod 'SDWebImage', '~> 5.0'
 
 end

@@ -26,7 +26,7 @@ extension NetworkError: CustomStringConvertible {
         case .invalidURL:
             return "Invalid request please try again."
         case .responseError:
-            return "Response is invalid"
+            return "Response is not proper from server."
         case .unknownError:
             return "Unknown Error"
         }

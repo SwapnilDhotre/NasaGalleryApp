@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        window?.rootViewController = UINavigationController(rootViewController: GalleryHomeViewController.create())
+        
+        let viewModel = GalleryHomeViewModel(networkService: NetworkManager())
+        window?.rootViewController = UINavigationController(rootViewController: GalleryHomeViewController.create(viewModel: viewModel))
+        window?.makeKeyAndVisible()
         
         return true
     }

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		373C8C9500907958F1A51800 /* Pods_NasaGalleryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF3BF829F72645071550C86 /* Pods_NasaGalleryApp.framework */; };
 		E66FADC0291F6FCF00CD4018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADBF291F6FCF00CD4018 /* AppDelegate.swift */; };
-		E66FADC4291F6FCF00CD4018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADC3291F6FCF00CD4018 /* ViewController.swift */; };
-		E66FADC7291F6FCF00CD4018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66FADC5291F6FCF00CD4018 /* Main.storyboard */; };
 		E66FADC9291F6FD000CD4018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66FADC8291F6FD000CD4018 /* Assets.xcassets */; };
 		E66FADCC291F6FD000CD4018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66FADCA291F6FD000CD4018 /* LaunchScreen.storyboard */; };
 		E66FADD9291F7E8200CD4018 /* GalleryHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADD7291F7E8200CD4018 /* GalleryHomeViewController.swift */; };
@@ -20,15 +18,34 @@
 		E66FADE2291F817D00CD4018 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADE1291F817D00CD4018 /* NetworkManager.swift */; };
 		E66FADE4291F83C800CD4018 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADE3291F83C800CD4018 /* NetworkError.swift */; };
 		E66FADE7291FA4B500CD4018 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADE6291FA4B500CD4018 /* Observable.swift */; };
+		E66FADEA291FAEC000CD4018 /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADE9291FAEC000CD4018 /* UIViewController_Extension.swift */; };
+		E66FADEE291FAF0800CD4018 /* CVProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADEC291FAF0800CD4018 /* CVProgressHUD.swift */; };
+		E66FADEF291FAF0800CD4018 /* CVProgressHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = E66FADED291FAF0800CD4018 /* CVProgressHUD.xib */; };
+		E66FADF1291FBFA000CD4018 /* GalleryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADF0291FBFA000CD4018 /* GalleryItemViewModel.swift */; };
+		E66FADF5291FC21F00CD4018 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADF3291FC21F00CD4018 /* GalleryCollectionViewCell.swift */; };
+		E66FADF6291FC21F00CD4018 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E66FADF4291FC21F00CD4018 /* GalleryCollectionViewCell.xib */; };
+		E66FADF8291FC3E900CD4018 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66FADF7291FC3E900CD4018 /* String_Extension.swift */; };
+		E6E33FAE2920D98800FBEBC0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E33FAD2920D98800FBEBC0 /* NetworkService.swift */; };
+		E6E33FD92920DD9900FBEBC0 /* NasaGalleryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E33FD82920DD9900FBEBC0 /* NasaGalleryAppTests.swift */; };
+		E6EC290D2920192E00453F09 /* GalleryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EC290B2920192E00453F09 /* GalleryDetailsViewController.swift */; };
+		E6EC290E2920192E00453F09 /* GalleryDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6EC290C2920192E00453F09 /* GalleryDetailsViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6E33FD32920DD7900FBEBC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E66FADB4291F6FCF00CD4018 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E66FADBB291F6FCF00CD4018;
+			remoteInfo = NasaGalleryApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8EF3BF829F72645071550C86 /* Pods_NasaGalleryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaGalleryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24EF739296B78EF0BDE8AD0 /* Pods-NasaGalleryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaGalleryApp.release.xcconfig"; path = "Target Support Files/Pods-NasaGalleryApp/Pods-NasaGalleryApp.release.xcconfig"; sourceTree = "<group>"; };
 		E66FADBC291F6FCF00CD4018 /* NasaGalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaGalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66FADBF291F6FCF00CD4018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E66FADC3291F6FCF00CD4018 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E66FADC6291F6FCF00CD4018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E66FADC8291F6FD000CD4018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E66FADCB291F6FD000CD4018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E66FADCD291F6FD000CD4018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +56,18 @@
 		E66FADE1291F817D00CD4018 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E66FADE3291F83C800CD4018 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E66FADE6291FA4B500CD4018 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		E66FADE9291FAEC000CD4018 /* UIViewController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_Extension.swift; sourceTree = "<group>"; };
+		E66FADEC291FAF0800CD4018 /* CVProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVProgressHUD.swift; sourceTree = "<group>"; };
+		E66FADED291FAF0800CD4018 /* CVProgressHUD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVProgressHUD.xib; sourceTree = "<group>"; };
+		E66FADF0291FBFA000CD4018 /* GalleryItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItemViewModel.swift; sourceTree = "<group>"; };
+		E66FADF3291FC21F00CD4018 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		E66FADF4291FC21F00CD4018 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
+		E66FADF7291FC3E900CD4018 /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		E6E33FAD2920D98800FBEBC0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E6E33FCF2920DD7900FBEBC0 /* NasaGalleryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaGalleryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E33FD82920DD9900FBEBC0 /* NasaGalleryAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NasaGalleryAppTests.swift; path = ../../../../../.Trash/NasaGalleryAppTests.swift; sourceTree = "<group>"; };
+		E6EC290B2920192E00453F09 /* GalleryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetailsViewController.swift; sourceTree = "<group>"; };
+		E6EC290C2920192E00453F09 /* GalleryDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryDetailsViewController.xib; sourceTree = "<group>"; };
 		F114B6865EF10C3D34008BAD /* Pods-NasaGalleryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaGalleryApp.debug.xcconfig"; path = "Target Support Files/Pods-NasaGalleryApp/Pods-NasaGalleryApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,6 +77,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				373C8C9500907958F1A51800 /* Pods_NasaGalleryApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E33FCC2920DD7900FBEBC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E66FADBE291F6FCF00CD4018 /* NasaGalleryApp */,
+				E6E33FD02920DD7900FBEBC0 /* NasaGalleryAppTests */,
 				E66FADBD291F6FCF00CD4018 /* Products */,
 				DF132BC5FB7703EE3749645F /* Pods */,
 				F1127BAFFC2AABD2659DF911 /* Frameworks */,
@@ -77,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				E66FADBC291F6FCF00CD4018 /* NasaGalleryApp.app */,
+				E6E33FCF2920DD7900FBEBC0 /* NasaGalleryAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,12 +122,12 @@
 		E66FADBE291F6FCF00CD4018 /* NasaGalleryApp */ = {
 			isa = PBXGroup;
 			children = (
+				E66FADE8291FAEAC00CD4018 /* Extensions */,
 				E66FADE5291FA46A00CD4018 /* Util */,
 				E66FADDF291F815D00CD4018 /* Managers */,
 				E66FADD3291F781B00CD4018 /* GalleryHome */,
+				E6EC290A2920190F00453F09 /* GalleryDetails */,
 				E66FADBF291F6FCF00CD4018 /* AppDelegate.swift */,
-				E66FADC3291F6FCF00CD4018 /* ViewController.swift */,
-				E66FADC5291F6FCF00CD4018 /* Main.storyboard */,
 				E66FADC8291F6FD000CD4018 /* Assets.xcassets */,
 				E66FADCA291F6FD000CD4018 /* LaunchScreen.storyboard */,
 				E66FADCD291F6FD000CD4018 /* Info.plist */,
@@ -118,6 +156,7 @@
 		E66FADD5291F784300CD4018 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E66FADF2291FC20500CD4018 /* Cells */,
 				E66FADD7291F7E8200CD4018 /* GalleryHomeViewController.swift */,
 				E66FADD8291F7E8200CD4018 /* GalleryHomeViewController.xib */,
 			);
@@ -128,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				E66FADDB291F7EBB00CD4018 /* GalleryHomeViewModel.swift */,
+				E66FADF0291FBFA000CD4018 /* GalleryItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -143,6 +183,7 @@
 		E66FADE0291F816A00CD4018 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E6E33FAD2920D98800FBEBC0 /* NetworkService.swift */,
 				E66FADE1291F817D00CD4018 /* NetworkManager.swift */,
 				E66FADE3291F83C800CD4018 /* NetworkError.swift */,
 			);
@@ -152,9 +193,54 @@
 		E66FADE5291FA46A00CD4018 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				E66FADEB291FAEF700CD4018 /* CVProgress */,
 				E66FADE6291FA4B500CD4018 /* Observable.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		E66FADE8291FAEAC00CD4018 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E66FADE9291FAEC000CD4018 /* UIViewController_Extension.swift */,
+				E66FADF7291FC3E900CD4018 /* String_Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E66FADEB291FAEF700CD4018 /* CVProgress */ = {
+			isa = PBXGroup;
+			children = (
+				E66FADEC291FAF0800CD4018 /* CVProgressHUD.swift */,
+				E66FADED291FAF0800CD4018 /* CVProgressHUD.xib */,
+			);
+			path = CVProgress;
+			sourceTree = "<group>";
+		};
+		E66FADF2291FC20500CD4018 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E66FADF3291FC21F00CD4018 /* GalleryCollectionViewCell.swift */,
+				E66FADF4291FC21F00CD4018 /* GalleryCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E6E33FD02920DD7900FBEBC0 /* NasaGalleryAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6E33FD82920DD9900FBEBC0 /* NasaGalleryAppTests.swift */,
+			);
+			path = NasaGalleryAppTests;
+			sourceTree = "<group>";
+		};
+		E6EC290A2920190F00453F09 /* GalleryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E6EC290B2920192E00453F09 /* GalleryDetailsViewController.swift */,
+				E6EC290C2920192E00453F09 /* GalleryDetailsViewController.xib */,
+			);
+			path = GalleryDetails;
 			sourceTree = "<group>";
 		};
 		F1127BAFFC2AABD2659DF911 /* Frameworks */ = {
@@ -176,6 +262,7 @@
 				E66FADB8291F6FCF00CD4018 /* Sources */,
 				E66FADB9291F6FCF00CD4018 /* Frameworks */,
 				E66FADBA291F6FCF00CD4018 /* Resources */,
+				3E40C3277639C6C9344579F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +272,24 @@
 			productName = NasaGalleryApp;
 			productReference = E66FADBC291F6FCF00CD4018 /* NasaGalleryApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E6E33FCE2920DD7900FBEBC0 /* NasaGalleryAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E33FD52920DD7900FBEBC0 /* Build configuration list for PBXNativeTarget "NasaGalleryAppTests" */;
+			buildPhases = (
+				E6E33FCB2920DD7900FBEBC0 /* Sources */,
+				E6E33FCC2920DD7900FBEBC0 /* Frameworks */,
+				E6E33FCD2920DD7900FBEBC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6E33FD42920DD7900FBEBC0 /* PBXTargetDependency */,
+			);
+			name = NasaGalleryAppTests;
+			productName = NasaGalleryAppTests;
+			productReference = E6E33FCF2920DD7900FBEBC0 /* NasaGalleryAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -198,6 +303,10 @@
 				TargetAttributes = {
 					E66FADBB291F6FCF00CD4018 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					E6E33FCE2920DD7900FBEBC0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E66FADBB291F6FCF00CD4018;
 					};
 				};
 			};
@@ -215,6 +324,7 @@
 			projectRoot = "";
 			targets = (
 				E66FADBB291F6FCF00CD4018 /* NasaGalleryApp */,
+				E6E33FCE2920DD7900FBEBC0 /* NasaGalleryAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,10 +334,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EC290E2920192E00453F09 /* GalleryDetailsViewController.xib in Resources */,
 				E66FADCC291F6FD000CD4018 /* LaunchScreen.storyboard in Resources */,
+				E66FADF6291FC21F00CD4018 /* GalleryCollectionViewCell.xib in Resources */,
 				E66FADC9291F6FD000CD4018 /* Assets.xcassets in Resources */,
+				E66FADEF291FAF0800CD4018 /* CVProgressHUD.xib in Resources */,
 				E66FADDA291F7E8200CD4018 /* GalleryHomeViewController.xib in Resources */,
-				E66FADC7291F6FCF00CD4018 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E33FCD2920DD7900FBEBC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +375,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3E40C3277639C6C9344579F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaGalleryApp/Pods-NasaGalleryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaGalleryApp/Pods-NasaGalleryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NasaGalleryApp/Pods-NasaGalleryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -263,28 +399,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E66FADC4291F6FCF00CD4018 /* ViewController.swift in Sources */,
+				E66FADF5291FC21F00CD4018 /* GalleryCollectionViewCell.swift in Sources */,
+				E66FADEE291FAF0800CD4018 /* CVProgressHUD.swift in Sources */,
 				E66FADE4291F83C800CD4018 /* NetworkError.swift in Sources */,
+				E66FADF8291FC3E900CD4018 /* String_Extension.swift in Sources */,
 				E66FADDC291F7EBB00CD4018 /* GalleryHomeViewModel.swift in Sources */,
 				E66FADC0291F6FCF00CD4018 /* AppDelegate.swift in Sources */,
 				E66FADE7291FA4B500CD4018 /* Observable.swift in Sources */,
+				E66FADEA291FAEC000CD4018 /* UIViewController_Extension.swift in Sources */,
+				E6E33FAE2920D98800FBEBC0 /* NetworkService.swift in Sources */,
 				E66FADE2291F817D00CD4018 /* NetworkManager.swift in Sources */,
+				E6EC290D2920192E00453F09 /* GalleryDetailsViewController.swift in Sources */,
 				E66FADD9291F7E8200CD4018 /* GalleryHomeViewController.swift in Sources */,
+				E66FADF1291FBFA000CD4018 /* GalleryItemViewModel.swift in Sources */,
 				E66FADDE291F7F0500CD4018 /* GalleryModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E33FCB2920DD7900FBEBC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E33FD92920DD9900FBEBC0 /* NasaGalleryAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		E66FADC5291F6FCF00CD4018 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E66FADC6291F6FCF00CD4018 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		E6E33FD42920DD7900FBEBC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E66FADBB291F6FCF00CD4018 /* NasaGalleryApp */;
+			targetProxy = E6E33FD32920DD7900FBEBC0 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		E66FADCA291F6FD000CD4018 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,9 +572,9 @@
 				INFOPLIST_FILE = NasaGalleryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,9 +600,9 @@
 				INFOPLIST_FILE = NasaGalleryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +613,40 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6E33FD62920DD7900FBEBC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.NasaGalleryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasaGalleryApp.app/NasaGalleryApp";
+			};
+			name = Debug;
+		};
+		E6E33FD72920DD7900FBEBC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.NasaGalleryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasaGalleryApp.app/NasaGalleryApp";
 			};
 			name = Release;
 		};
@@ -483,6 +667,15 @@
 			buildConfigurations = (
 				E66FADD1291F6FD000CD4018 /* Debug */,
 				E66FADD2291F6FD000CD4018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E33FD52920DD7900FBEBC0 /* Build configuration list for PBXNativeTarget "NasaGalleryAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E33FD62920DD7900FBEBC0 /* Debug */,
+				E6E33FD72920DD7900FBEBC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

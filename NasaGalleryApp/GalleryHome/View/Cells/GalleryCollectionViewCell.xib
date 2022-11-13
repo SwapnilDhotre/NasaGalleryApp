@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GalleryCollectionViewCell" customModule="NasaGalleryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="187"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1x-Xf-dLk">
+                        <rect key="frame" x="0.0" y="0.0" width="166" height="187"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4dZ-HA-N54">
+                                <rect key="frame" x="0.0" y="0.0" width="166" height="187"/>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.14117647059999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsJ-8A-ekV">
+                                <rect key="frame" x="0.0" y="162" width="166" height="25"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBH-Rz-xS5">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="25"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oGe-XY-Fgi">
+                                            <rect key="frame" x="0.0" y="0.0" width="166" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="systemUltraThinMaterialLight"/>
+                                    </visualEffectView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeM-qw-N0g">
+                                        <rect key="frame" x="5" y="0.0" width="156" height="25"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XBH-Rz-xS5" secondAttribute="trailing" id="9ZI-bI-EPQ"/>
+                                    <constraint firstItem="XBH-Rz-xS5" firstAttribute="leading" secondItem="ZsJ-8A-ekV" secondAttribute="leading" id="H77-LP-PeV"/>
+                                    <constraint firstItem="TeM-qw-N0g" firstAttribute="top" secondItem="ZsJ-8A-ekV" secondAttribute="top" id="Ha4-fl-Uhd"/>
+                                    <constraint firstAttribute="trailing" secondItem="TeM-qw-N0g" secondAttribute="trailing" constant="5" id="SPm-Yh-R4Q"/>
+                                    <constraint firstItem="TeM-qw-N0g" firstAttribute="leading" secondItem="ZsJ-8A-ekV" secondAttribute="leading" constant="5" id="WWz-Le-e7E"/>
+                                    <constraint firstAttribute="bottom" secondItem="XBH-Rz-xS5" secondAttribute="bottom" id="cMG-bL-tLo"/>
+                                    <constraint firstItem="XBH-Rz-xS5" firstAttribute="top" secondItem="ZsJ-8A-ekV" secondAttribute="top" id="iAz-zE-4Sf"/>
+                                    <constraint firstAttribute="height" constant="25" id="lxE-n6-9Le"/>
+                                    <constraint firstAttribute="bottom" secondItem="TeM-qw-N0g" secondAttribute="bottom" id="uAl-qS-Hqt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4dZ-HA-N54" secondAttribute="bottom" id="0Zr-3h-G72"/>
+                            <constraint firstAttribute="trailing" secondItem="ZsJ-8A-ekV" secondAttribute="trailing" id="2Jt-Yf-GKl"/>
+                            <constraint firstAttribute="trailing" secondItem="4dZ-HA-N54" secondAttribute="trailing" id="Bff-0a-EZj"/>
+                            <constraint firstItem="ZsJ-8A-ekV" firstAttribute="leading" secondItem="f1x-Xf-dLk" secondAttribute="leading" id="KsJ-c2-ub9"/>
+                            <constraint firstItem="4dZ-HA-N54" firstAttribute="leading" secondItem="f1x-Xf-dLk" secondAttribute="leading" id="WxY-QZ-gdZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZsJ-8A-ekV" secondAttribute="bottom" id="aRc-Xb-5te"/>
+                            <constraint firstItem="4dZ-HA-N54" firstAttribute="top" secondItem="f1x-Xf-dLk" secondAttribute="top" id="tIX-8r-pPv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="f1x-Xf-dLk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gju-Td-0tK"/>
+                <constraint firstAttribute="bottom" secondItem="f1x-Xf-dLk" secondAttribute="bottom" id="Znd-qG-8aD"/>
+                <constraint firstAttribute="trailing" secondItem="f1x-Xf-dLk" secondAttribute="trailing" id="cAH-aT-td6"/>
+                <constraint firstItem="f1x-Xf-dLk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hzA-Mf-Hc0"/>
+            </constraints>
+            <size key="customSize" width="166" height="187"/>
+            <connections>
+                <outlet property="containerView" destination="f1x-Xf-dLk" id="3Gg-8m-zac"/>
+                <outlet property="imageView" destination="4dZ-HA-N54" id="goZ-G6-7lg"/>
+                <outlet property="title" destination="TeM-qw-N0g" id="jHc-aJ-CqI"/>
+            </connections>
+            <point key="canvasLocation" x="215.94202898550725" y="101.45089285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

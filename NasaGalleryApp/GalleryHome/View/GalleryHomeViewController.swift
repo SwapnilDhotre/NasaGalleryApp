@@ -30,6 +30,8 @@ class GalleryHomeViewController: UIViewController {
     }
     
     func setupCollectionView() {
+        self.collectionView.accessibilityIdentifier = "home_collectionView"
+        
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         

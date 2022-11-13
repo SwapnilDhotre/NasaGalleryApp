@@ -25,8 +25,6 @@ class GalleryDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.navigationBar.isHidden = true
         
         self.styleUI()
         self.setupCollectionView()
@@ -35,6 +33,18 @@ class GalleryDetailsViewController: UIViewController {
         
         // Prefetch items next to seleted item
         self.prefetchPreviousAndNextItem()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.navigationBar.isHidden = false
     }
     
     func prefetchPreviousAndNextItem() {
@@ -80,6 +90,8 @@ class GalleryDetailsViewController: UIViewController {
     }
     
     func setupCollectionView() {
+        self.collectionView.accessibilityIdentifier = "gallery_details_collectionView"
+        
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         self.collectionView.prefetchDataSource = self

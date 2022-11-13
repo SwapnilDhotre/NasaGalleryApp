@@ -50,7 +50,7 @@ class SwipeCollectionViewCell: UICollectionViewCell {
     
     @IBAction func tapOnImage(_ sender: UIButton) {
         self.imageHalfHeightConstraint.priority = UILayoutPriority(800)
-        UIView.animate(withDuration: 1.0) {
+        UIView.animate(withDuration: 0.4) {
             self.lblOverviewTitle.textColor = .white
             self.lblDescription.textColor = .white
             self.overviewView.backgroundColor = .clear
@@ -62,7 +62,7 @@ class SwipeCollectionViewCell: UICollectionViewCell {
     @IBAction func btnOverviewTapped(_ sender: UIButton) {
         self.imageHalfHeightConstraint.priority = UILayoutPriority(950)
         
-        UIView.animate(withDuration: 1.0) {
+        UIView.animate(withDuration: 0.4) {
             self.lblOverviewTitle.textColor = .darkText
             self.lblDescription.textColor = .darkText
             self.overviewView.backgroundColor = .white

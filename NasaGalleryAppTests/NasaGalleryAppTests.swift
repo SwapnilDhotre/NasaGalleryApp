@@ -6,30 +6,87 @@
 //
 
 import XCTest
+import Combine
+@testable import NasaGalleryApp
 
 class NasaGalleryAppTests: XCTestCase {
+    
+    private var sut: GalleryHomeViewModel!
+    private var networkService: MockNetworkService!
+    private var mockViewListener: MockViewListener!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        networkService = MockNetworkService()
+        sut = GalleryHomeViewModel(networkService: networkService)
+        
+        mockViewListener = MockViewListener(viewModel: sut)
+        
+        try super.setUpWithError()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        mockViewListener = nil
+        sut = nil
+        networkService = nil
+        
+        try super.tearDownWithError()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testUpdateData_onAPISuccess() {
+        // Given
+        let model = GalleryModel(title: "San Francisco Night", url: "http://sample.com/sample1.jpg", hdurl: nil, mediaType: "image", serviceVersion: "v1", explanation: "Great place to enjoy night.", date: "2020-12-26", copyright: "Mahesh Sharma")
+        networkService.mockResponse = .success([model])
+        
+        // When
+        sut.getGalleryData()
+        
+        // Then
+        XCTAssertEqual(mockViewListener.data.count, 1)
+        XCTAssertEqual(mockViewListener.data.first!.getImageTitle(), "San Francisco Night")
+        XCTAssertEqual(mockViewListener.data.first!.getThumbnailURL(), "http://sample.com/sample1.jpg")
+        XCTAssertEqual(mockViewListener.data.first!.getHDURL(), nil)
+        XCTAssertEqual(mockViewListener.data.first!.getExplanation(), "Great place to enjoy night.")
+        XCTAssertEqual(mockViewListener.data.first!.getParsedDate(), "26 Dec 2020")
     }
+    
+    func testUpdateData_onAPIFailure() {
+        // Given
+        networkService.mockResponse = .failure(NetworkError.responseError)
+        
+        // When
+        sut.getGalleryData()
+        
+        // Then
+        XCTAssertEqual(mockViewListener.data.count, 0)
+        XCTAssertNotNil(mockViewListener.error)
+        XCTAssertTrue(mockViewListener.error is NetworkError)
+        XCTAssertEqual(mockViewListener.error as! NetworkError, NetworkError.responseError)
+    }
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+class MockNetworkService: NetworkService {
+    
+    var mockResponse: Result<[GalleryModel], Error>?
+    private var cancellables = Set<AnyCancellable>()
+    
+    func getGalleryData() -> Future<[GalleryModel], Error> {
+        return Future<[GalleryModel], Error> { [weak self] promise in
+            promise(self!.mockResponse!)
         }
     }
+}
 
+class MockViewListener {
+    var data: [GalleryItemViewModel] = []
+    var error: Error?
+    
+    init(viewModel: GalleryHomeViewModel) {
+        viewModel.galleryData.bind { data in
+            self.data = data
+        }
+        
+        viewModel.galleryDataFetchError.bind { error in
+            self.error = error
+        }
+    }
 }
